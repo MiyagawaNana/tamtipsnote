@@ -7,19 +7,17 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular-animate.min.js"></script>
 <script src="script/route.js"></script>
 <script src="script/controller.js"></script>
+<script src="script/data.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <title>Angular Route Demo</title>
 </head>
-<body>
+<body ng-controller="baseController">
 	<div>
 		<header>
 			<h1>Angular Route Demo</h1>
 			<nav>
-				<div><a href="#/girl">あかちゃん</a></div>
-				<div><a href="#/wheel">観覧車</a></div>
-				<div><a href="#/flower">花畑</a></div>
-				<div><a href="#/couple">カップル</a></div>
+				<div ng-repeat="(key,value) in dataList"><a ng-href="#/{{key}}">{{value.title}}</a></div>
 			</nav>
 		</header>
 		<article ng-view ng-cloak class="pageContainer"></article>

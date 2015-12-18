@@ -3,7 +3,7 @@ angular.module('myApp',['ngRoute', 'ngAnimate'])
 	$routeProvider
 	.when('/:path',{
 		templateUrl:'views/page.html',
-		controller:'myController'
+		controller:'viewController'
 	})
 	.otherwise({
 		redirectTo:'/girl'
