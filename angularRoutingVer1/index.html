@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ja" ng-app="myApp">
+<head>
+<meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+<script src="http://code.angularjs.org/1.4.1/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.1/angular-route.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular-animate.min.js"></script>
+<script src="script/route.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<title>Angular Route Demo</title>
+</head>
+<body>
+	<div>
+		<header>
+			<h1>Angular Route Demo</h1>
+			<nav>
+				<div><a href="#/girl">あかちゃん</a></div>
+				<div><a href="#/wheel">観覧車</a></div>
+				<div><a href="#/flower">花畑</a></div>
+				<div><a href="#/couple">カップル</a></div>
+			</nav>
+		</header>
+		<article ng-view  ng-cloak class="pageContainer"></article>
+		<footer><small>copyright(c)sample.com</small></footer>
+	</div>
+</body>
+</html>

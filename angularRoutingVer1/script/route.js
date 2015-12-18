@@ -1,0 +1,19 @@
+angular.module('myApp',['ngRoute', 'ngAnimate'])
+.config(function($routeProvider){
+	$routeProvider
+	.when('/girl',{
+		templateUrl:'views/girl.html'
+	})
+	.when('/wheel',{
+		templateUrl:'views/wheel.html'
+	})
+	.when('/flower',{
+		templateUrl:'views/flower.html'
+	})
+	.when('/couple',{
+		templateUrl:'views/couple.html'
+	})
+	.otherwise({
+		redirectTo:'/girl'
+	})
+});
