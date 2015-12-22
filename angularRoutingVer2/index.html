@@ -12,12 +12,15 @@
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <title>Angular Route Demo</title>
 </head>
-<body ng-controller="baseController">
+<body>
 	<div>
 		<header>
 			<h1>Angular Route Demo</h1>
 			<nav>
-				<div ng-repeat="(key,value) in dataList"><a ng-href="#/{{key}}">{{value.title}}</a></div>
+				<div><a href="#/girl">あかちゃん</a></div>
+				<div><a href="#/wheel">観覧車</a></div>
+				<div><a href="#/flower">花畑</a></div>
+				<div><a href="#/couple">カップル</a></div>
 			</nav>
 		</header>
 		<article ng-view ng-cloak class="pageContainer"></article>

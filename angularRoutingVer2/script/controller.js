@@ -8,9 +8,4 @@ angular.module('myApp')
 	$scope.title = dataList[$routeParams.path]['title'];
 	$scope.img = dataList[$routeParams.path]['img'];
 	$scope.str = dataList[$routeParams.path]['str'];
-}])
-
-//全体用のコントローラー
-.controller('baseController', ['$scope','dataList', function($scope,dataList){
-	$scope.dataList = dataList();
 }]);
