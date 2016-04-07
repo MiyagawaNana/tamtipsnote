@@ -1,0 +1,92 @@
+body{
+    font-family:-apple-system,’Lucida Grande’,‘Helvetica Neue’,’Hiragino Kaku Gothic ProN’,‘游ゴシック’,’メイリオ’,meiryo,sans-serif;
+
+    -webkit-text-size-adjust: 100%;
+}
+
+.container{
+    max-width: 400px;
+    margin: auto;
+}
+
+.tabContainer {
+    overflow-x: auto;
+}
+.tabContainer::-webkit-scrollbar {
+    height: 5px;
+}
+.tabContainer::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background: #000;
+}
+.tabContainer::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #000;
+}
+
+.tab{
+    display: table;
+    margin-top: 20px;
+}
+
+.tab__button{
+    display: table-cell;
+    text-align: center;
+    background-color: #000;
+    vertical-align: middle;
+    border: 2px solid white;
+    border-bottom-width: 4px;
+    min-width: 80px;
+}
+
+.tab__button.active{
+    border-bottom: none;
+}
+
+.tab__button a{
+    padding: 10px;
+    color: #fff;
+    display: block;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.contents__content{
+    background-color: #ccc;
+    text-align: center;
+}
+
+.contents__content div{
+    clear: left;
+}
+
+.contents__content div a{
+    display: table;
+    width: 100%;
+    text-decoration: none;
+    padding: 10px;
+    border-bottom:1px solid #000;
+    color:#222;
+    text-align: left;
+    line-height: 1.5em;
+    font-size: 14px;
+}
+
+.contents__content div a span{
+    display: table-cell;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contents__content div a:before{
+    content:'';
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-color: #fff;
+    display: table-cell;
+}
+
+
+
+
