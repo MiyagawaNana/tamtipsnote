@@ -16,11 +16,9 @@ body{
     height: 5px;
 }
 .tabContainer::-webkit-scrollbar-track {
-    border-radius: 5px;
     background: #000;
 }
 .tabContainer::-webkit-scrollbar-thumb {
-    border-radius: 5px;
     background: #000;
 }
 
