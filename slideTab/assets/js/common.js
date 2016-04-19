@@ -5,7 +5,7 @@ $(document).ready(function(){
     *******************************************/
 
     //タブボタンの数を取得
-    var tabQuentity = $('.tab__button').length;
+    var tabQuantity = $('.tab__button').length;
 
     //タブの長さとボディの長さの差分を取得
     var tabExtraDistance = $('.tab').width() - $('.tabContainer').width();
@@ -19,14 +19,14 @@ $(document).ready(function(){
         pager:false,
         controls:false,
         onSlideBefore: function($slideElement, oldIndex, newIndex){
-            //スライドする時に関数を呼び出す。nexIndexはスライダーの現在地。
+            //スライドする時に関数を呼び出す。newIndexはスライダーの現在地。
             slideChange(newIndex);
         }
     });
 
 
     /******************************************
-    スライドする時に発動する関数
+    スライドする時に発動する関数。タブの表示調整を行う。
     *******************************************/
 
     function slideChange(newIndex){
@@ -36,7 +36,7 @@ $(document).ready(function(){
         $('.tab > div:nth-child(' + ( newIndex + 1 ) + ')').addClass('active');
 
         //スクロールするべき距離を取得。タブ全体の長さ / ( タブの個数 - 1 ) * スライドの現在地
-        var scrollDestination = ( tabExtraDistance / (tabQuentity - 1) ) * ( newIndex );
+        var scrollDestination = ( tabExtraDistance / (tabQuantity - 1) ) * ( newIndex );
 
         //スクロール位置を調整
         $('.tabContainer').animate({ scrollLeft: scrollDestination }, 'slow');
